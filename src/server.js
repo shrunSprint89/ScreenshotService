@@ -41,6 +41,10 @@ app.use(express.json({ limit: '10mb' }));
 app.use(cors());
 app.use(helmet());
 
+app.get('/', (req, res) => {
+  res.status(200).json({ status: 'ok', message: 'Screenshot service is running' });
+});
+
 app.post('/render', async (req, res) => {
   try {
     const { html, url, width = 1280, height = 720, fullPage = false, delay = 0, type = 'png' } = req.body;
