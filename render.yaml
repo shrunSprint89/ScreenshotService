@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: screenshot-service
+    env: docker
+    plan: free

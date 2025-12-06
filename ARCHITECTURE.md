@@ -12,7 +12,6 @@ A Dockerized Node.js service that generates screenshots of HTML content or webpa
 ├── package.json           # Dependencies and scripts
 ├── .dockerignore          # Exclude node_modules, .git, etc.
 ├── README.md              # Usage, build, run instructions
-├── .gitignore             # Standard Node.js ignores
 └── ARCHITECTURE.md        # This document
 ```
 
@@ -171,3 +170,11 @@ ARCHITECTURE.md
 - Test: curl POST with html/url payloads.
 
 Design verified complete: covers all requested sections, actionable for implementation.
+
+## CI/CD Pipeline
+The CI/CD pipeline is designed to automate the build and deployment process to Render.com. The workflow is triggered by pushes to the `master` branch on GitHub.
+
+1.  **Connect to GitHub:** The user connects their GitHub repository to their Render.com account.
+2.  **Create a New Web Service:** The user creates a new "Web Service" on Render.com and selects the appropriate repository.
+3.  **Configure the Service:** Render automatically detects the `render.yaml` file in the repository root and uses it to configure the build and start commands for the service.
+4.  **Automatic Deployments:** Once the service is configured, Render will automatically build and deploy new changes whenever they are pushed to the `master` branch on GitHub.
