@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "c9257a0c-e76b-4f3c-acef-4b2958f4a6a1",
+		"name": "ScreenshotService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10324436",
+		"_collection_link": "https://blue-spaceship-9380-1.postman.co/workspace/N8N-and-docker~a2160c6e-6afa-4d08-a5c6-9ea9973b1c87/collection/10324436-c9257a0c-e76b-4f3c-acef-4b2958f4a6a1?action=share&source=collection_link&creator=10324436"
+	},
+	"item": [
+		{
+			"name": "Screenshot Google PNG Full Page",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.google.com\", \"type\": \"png\", \"width\": 1920, \"height\": 1080, \"fullPage\": true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot GitHub JPEG Viewport",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.github.com\", \"type\": \"jpeg\", \"width\": 1280, \"height\": 720, \"fullPage\": false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot Example WebP Full Page Quality 80",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.example.com\", \"type\": \"webp\", \"width\": 800, \"height\": 600, \"fullPage\": true, \"quality\": 80}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot Wikipedia PNG Viewport Timeout 5000",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://en.wikipedia.org\", \"type\": \"png\", \"width\": 1920, \"height\": 1080, \"fullPage\": false, \"timeout\": 5000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot Google JPEG Full Page WaitUntil DOMContentLoaded",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.google.com\", \"type\": \"jpeg\", \"width\": 1024, \"height\": 768, \"fullPage\": true, \"waitUntil\": \"domcontentloaded\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot GitHub WebP Viewport Quality 90 Timeout 10000",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.github.com\", \"type\": \"webp\", \"width\": 1440, \"height\": 900, \"fullPage\": false, \"quality\": 90, \"timeout\": 10000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot Example PNG Full Page WaitUntil NetworkIdle0",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.example.com\", \"type\": \"png\", \"width\": 1920, \"height\": 1080, \"fullPage\": true, \"waitUntil\": \"networkidle0\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot Wikipedia JPEG Viewport WaitUntil NetworkIdle2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://en.wikipedia.org\", \"type\": \"jpeg\", \"width\": 1280, \"height\": 720, \"fullPage\": false, \"waitUntil\": \"networkidle2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot Google WebP Full Page Quality 70 Timeout 3000",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.google.com\", \"type\": \"webp\", \"width\": 800, \"height\": 600, \"fullPage\": true, \"quality\": 70, \"timeout\": 3000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Screenshot GitHub PNG Viewport WaitUntil Load",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://www.github.com\", \"type\": \"png\", \"width\": 1024, \"height\": 768, \"fullPage\": false, \"waitUntil\": \"load\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://screenshotservice-rvo6.onrender.com/render/",
+					"protocol": "https",
+					"host": [
+						"screenshotservice-rvo6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"render",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
