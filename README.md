@@ -15,13 +15,18 @@ docker run -p 3000:3000 screenshot-service
 
 Accepts JSON payload with the following fields:
 
+#### Required Parameters (choose exactly one)
+
 - `html` (string): HTML content to render (mutually exclusive with `url`)
 - `url` (string): URL to screenshot (mutually exclusive with `html`)
-- `width` (number, default: 1280): Viewport width
-- `height` (number, default: 720): Viewport height
-- `fullPage` (boolean, default: false): Capture full page
-- `delay` (number, default: 0): Delay in milliseconds before screenshot
-- `type` (string, default: "png"): "png" or "jpeg"
+
+#### Optional Parameters
+
+- `width` (number, default: 1280): Viewport width in pixels
+- `height` (number, default: 720): Viewport height in pixels
+- `fullPage` (boolean, default: false): Capture full page (scrolls through entire content)
+- `delay` (number, default: 0): Delay in milliseconds before taking screenshot
+- `type` (string, default: "png"): Output format - "png" or "jpeg"
 
 Returns image binary (PNG/JPEG).
 
