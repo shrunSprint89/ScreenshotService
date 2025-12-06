@@ -124,7 +124,7 @@ app.post('/render', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Screenshot service listening on port ${PORT}`);
+  console.log(`Screenshot service v2 listening on port ${PORT}`);
   
   // Log startup diagnostic information
   console.log('Startup diagnostics:');
