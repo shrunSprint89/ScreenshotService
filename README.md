@@ -2,6 +2,22 @@
 
 A Dockerized Node.js service that generates screenshots of HTML content or webpages using headless Chromium via Puppeteer.
 
+## Environment Configuration
+
+The service supports environment variable configuration using [dotenv](https://www.npmjs.com/package/dotenv).
+
+### Available Environment Variables
+
+- `PORT` - The port to run the server on (default: 3000)
+- `PUPPETEER_LAUNCH_TIMEOUT` - Puppeteer launch timeout in milliseconds (default: 30000)
+- `PUPPETEER_NAVIGATION_TIMEOUT` - Puppeteer navigation timeout in milliseconds (default: 30000)
+- `PUPPETEER_RENDER_TIMEOUT` - Puppeteer render timeout in milliseconds (default: 60000)
+- `PUPPETEER_GLOBAL_REQUEST_TIMEOUT` - Global request timeout in milliseconds (default: 120000)
+- `MAX_BROWSERS` - Maximum number of browsers to launch (default: 5)
+- `MAX_PAGES_PER_BROWSER` - Maximum number of pages per browser (default: 10)
+- `QUEUE_TIMEOUT` - Queue timeout in milliseconds (default: 30000)
+- `PUPPETEER_EXECUTABLE_PATH` - Path to the Chromium executable (default: /usr/bin/chromium-browser)
+
 ## Build and Run
 
 ```bash
